@@ -75,7 +75,8 @@ CLM Algorithm run:
                                     generations/stepgame/instruction_length_1_to_5/20_samples_per_example/clm_results/test/indices_instruction_length_1_to_5.pkl" \
             --inputcolumnindexesfilename "../clm_aux/scripts/asp/single-gpu-
                                    generations/stepgame/instruction_length_1_to_5/20_samples_per_example/clm_results/generation_idx_instruction_length_1_to_5.npy" \
-            --inputclmresultsfilename "../clm_aux/scripts/asp/single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/clm_results/test/probs_instruction_length_1_to_5.npz" \
+            --inputclmresultsfilename "../clm_aux/scripts/asp/single-gpu-
+                                       generations/stepgame/instruction_length_1_to_5/20_samples_per_example/clm_results/test/probs_instruction_length_1_to_5.npz" \
             --samplefilename "../clm_aux/scripts/asp/single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/metallama3.1-8b-instruct.jsonl" \
             --labelfilename "../clm_aux/scripts/asp/single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/valid_curl_length1-5_test3_json.json"
 
