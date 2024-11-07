@@ -64,8 +64,8 @@ CLM Algorithm run:
                      --output_file "../clm_aux/scripts/asp/single-gpu-
                                     generations/stepgame/instruction_length_1_to_5/20_samples_per_example/clm_results/test/probs_instruction_length_1_to_5.npz" \
 		   --indices_file "indices_instruction_length_1_to_5.pkl"
-
-   8. Run the accuracy code:
+ 
+ 8. Run the accuracy code:
        
 	cd conformal-language-modeling/notebooks
 
