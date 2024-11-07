@@ -66,7 +66,7 @@ CLM Algorithm run:
 		   --indices_file "indices_instruction_length_1_to_5.pkl"
 
    8. Run the accuracy code:
-   9. 
+       
 	cd conformal-language-modeling/notebooks
 
 	python compute_accuracy_clm.py --method_id 0 \
