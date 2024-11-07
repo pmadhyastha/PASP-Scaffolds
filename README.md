@@ -40,6 +40,7 @@ CLM Algorithm run:
 
 
 7. Run the CLM algorithm as follows
+   
     python run_trials.py \
                 --train_score_file "../clm_aux/scripts/asp/single-gpu-
                                     generations/stepgame/instruction_length_1_to_5/20_samples_per_example/clm_results/train/probs_instruction_length_1_to_5.npy" \
