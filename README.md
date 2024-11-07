@@ -8,19 +8,19 @@ Sample Generations:
 	
 This will generate 20 samples per example and save them in output_name folder
    
-3. Run the file code to remove the eos delimiter from the output
+2. Run the file code to remove the eos delimiter from the output
    
 python asp_fix_eos.py --input "./single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/metallama3.1-8b-instruct_examples.jsonl" --output "./single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/metallama3.1-8b-instruct-examples_fix_eos.jsonl"
 
-4. Compute the loss (admission) function
+3. Compute the loss (admission) function
        
 python compute_asp_loss.py --filename "./single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/metallama3.1-8b-instruct-examples_fix_eos.jsonl" --losses_filename "./single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/all_losses_train_length_1_to_5.npy" --losses_txt_filename "./single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/all_losses_train_length_1_to_5.txt"
 
-5. compute the quality metric
+4. compute the quality metric
    
 python compute_asp_scores.py --filename "./single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/metallama3.1-8b-instruct-examples_fix_eos.jsonl" --scores_filename "./single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/all_prob_scores_train_length_1_to_5.npy" --scores_txt_filename "./single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/all_prob_scores_train_length_1_to_5.txt"
 
-6. compute the diversity metric
+5. compute the diversity metric
    
 python compute_asp_intra_match.py --filename "./single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/metallama3.1-8b-instruct-examples_fix_eos.jsonl" --output_filename "./single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/diversity_rouge.npy" --output_txt_filename "./single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/diversity_rouge.txt"
 
@@ -46,7 +46,7 @@ CLM Algorithm run:
 			   --num_val 0
 
 
-8. Run the CLM algorithm as follows
+7. Run the CLM algorithm as follows
    
     python run_trials.py \
                 --train_score_file "../clm_aux/scripts/asp/single-gpu-
@@ -64,3 +64,19 @@ CLM Algorithm run:
                      --output_file "../clm_aux/scripts/asp/single-gpu-
                                     generations/stepgame/instruction_length_1_to_5/20_samples_per_example/clm_results/test/probs_instruction_length_1_to_5.npz" \
 		   --indices_file "indices_instruction_length_1_to_5.pkl"
+
+   8. Run the accuracy code:
+   9. 
+	cd conformal-language-modeling/notebooks
+
+	python compute_accuracy_clm.py --method_id 0 \
+            --accuracy_path "../clm_aux/scripts/asp/single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/clm_results/test/semantic_accuracy_method0.csv" \
+            --inputindexesfilename "../clm_aux/scripts/asp/single-gpu-
+                                    generations/stepgame/instruction_length_1_to_5/20_samples_per_example/clm_results/test/indices_instruction_length_1_to_5.pkl" \
+            --inputcolumnindexesfilename "../clm_aux/scripts/asp/single-gpu-
+                                   generations/stepgame/instruction_length_1_to_5/20_samples_per_example/clm_results/generation_idx_instruction_length_1_to_5.npy" \
+            --inputclmresultsfilename "../clm_aux/scripts/asp/single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/clm_results/test/probs_instruction_length_1_to_5.npz" \
+            --samplefilename "../clm_aux/scripts/asp/single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/metallama3.1-8b-instruct.jsonl" \
+            --labelfilename "../clm_aux/scripts/asp/single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/valid_curl_length1-5_test3_json.json"
+
+   
