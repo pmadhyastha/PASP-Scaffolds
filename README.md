@@ -16,8 +16,9 @@ python asp_fix_eos.py --input "./single-gpu-generations/stepgame/instruction_len
 ```
 
 3. Compute the loss (admission) function
-       
+```bash         
 python compute_asp_loss.py --filename "./single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/metallama3.1-8b-instruct-examples_fix_eos.jsonl" --losses_filename "./single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/all_losses_train_length_1_to_5.npy" --losses_txt_filename "./single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/all_losses_train_length_1_to_5.txt"
+```
 
 4. compute the quality metric
    
