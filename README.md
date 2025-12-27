@@ -21,8 +21,9 @@ python compute_asp_loss.py --filename "./single-gpu-generations/stepgame/instruc
 ```
 
 4. compute the quality metric
-   
+```bash   
 python compute_asp_scores.py --filename "./single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/metallama3.1-8b-instruct-examples_fix_eos.jsonl" --scores_filename "./single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/all_prob_scores_train_length_1_to_5.npy" --scores_txt_filename "./single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/all_prob_scores_train_length_1_to_5.txt"
+```
 
 5. compute the diversity metric
    
