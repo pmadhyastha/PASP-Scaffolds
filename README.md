@@ -36,8 +36,8 @@ CLM Algorithm run:
    
    Generate the CLM input data
 
-   ```bash
-python stepgame_data.py \
+```bash
+     python stepgame_data.py \
          --input_dir "../clm_aux/scripts/asp/single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/" \
          --output_dir "../clm_aux/scripts/asp/single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/clm_results/" \
          --input_loss_file "all_losses_train_length_1_to_5.npy" \
