@@ -80,11 +80,11 @@ python run_trials.py \
 
  9. Run the accuracy code:
 ```bash        
-	cd conformal-language-modeling/notebooks
+cd conformal-language-modeling/notebooks
 ```
 
 ```bash 
-	python compute_accuracy_clm.py --method_id 0 \
+python compute_accuracy_clm.py --method_id 0 \
             --accuracy_path "../clm_aux/scripts/asp/single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/clm_results/test/semantic_accuracy_method0.csv" \
             --inputindexesfilename "../clm_aux/scripts/asp/single-gpu-
                                     generations/stepgame/instruction_length_1_to_5/20_samples_per_example/clm_results/test/indices_instruction_length_1_to_5.pkl" \
