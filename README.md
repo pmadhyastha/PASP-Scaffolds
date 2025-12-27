@@ -80,6 +80,7 @@ python run_trials.py \
 	cd conformal-language-modeling/notebooks
 ```
 
+```bash 
 	python compute_accuracy_clm.py --method_id 0 \
             --accuracy_path "../clm_aux/scripts/asp/single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/clm_results/test/semantic_accuracy_method0.csv" \
             --inputindexesfilename "../clm_aux/scripts/asp/single-gpu-
@@ -90,5 +91,5 @@ python run_trials.py \
                                        generations/stepgame/instruction_length_1_to_5/20_samples_per_example/clm_results/test/probs_instruction_length_1_to_5.npz" \
             --samplefilename "../clm_aux/scripts/asp/single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/metallama3.1-8b-instruct.jsonl" \
             --labelfilename "../clm_aux/scripts/asp/single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/valid_curl_length1-5_test3_json.json"
-
+```
    
