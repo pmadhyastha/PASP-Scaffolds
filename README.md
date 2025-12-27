@@ -52,21 +52,6 @@ CLM Algorithm run:
          --num_train 0 \
          --num_val 0
 ```
-   
-   python stepgame_data.py \
-               --input_dir "../clm_aux/scripts/asp/single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/" \
-               --output_dir "../clm_aux/scripts/asp/single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/clm_results/" \
-			   --input_loss_file "all_losses_train_length_1_to_5.npy" \
-			   --input_prob_file "all_prob_scores_train_length_1_to_5.npy" \
-			   --input_diversity_file "diversity_rouge.npy" \
-			   --generation_idx_file "generation_idx_instruction_length_1_to_5.npy" \
-			   --splits_file "splits_instruction_length_1_to_5.npz" \
-			   --output_labels_file "labels_instruction_length_1_to_5.npy" \
-			   --output_prob_file "probs_instruction_length_1_to_5.npy" \
-			   --output_diversity_file "diversity_instruction_length_1_to_5.npy" \
-			   --loss_threshold 0.01 \
-			   --num_train 0 \
-			   --num_val 0
 
 
 8. Run the CLM algorithm as follows
