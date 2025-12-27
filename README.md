@@ -11,8 +11,9 @@ python run_asp.py --stepgame_starting_index 0 --stepgame_end_index <len(dataset)
 This will generate 20 samples per example and save them in output_name folder
    
 2. Run the file code to remove the eos delimiter from the output
-   
+```bash   
 python asp_fix_eos.py --input "./single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/metallama3.1-8b-instruct_examples.jsonl" --output "./single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/metallama3.1-8b-instruct-examples_fix_eos.jsonl"
+```
 
 3. Compute the loss (admission) function
        
