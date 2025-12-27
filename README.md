@@ -55,8 +55,9 @@ CLM Algorithm run:
 
 
 8. Run the CLM algorithm as follows
-   
-    python run_trials.py \
+
+```bash   
+python run_trials.py \
                 --train_score_file "../clm_aux/scripts/asp/single-gpu-
                                     generations/stepgame/instruction_length_1_to_5/20_samples_per_example/clm_results/train/probs_instruction_length_1_to_5.npy" \
                 --train_label_file "../clm_aux/scripts/asp/single-gpu-
@@ -72,7 +73,8 @@ CLM Algorithm run:
                      --output_file "../clm_aux/scripts/asp/single-gpu-
                                     generations/stepgame/instruction_length_1_to_5/20_samples_per_example/clm_results/test/probs_instruction_length_1_to_5.npz" \
 		   --indices_file "indices_instruction_length_1_to_5.pkl"
- 
+```
+
  9. Run the accuracy code:
        
 	cd conformal-language-modeling/notebooks
