@@ -32,9 +32,12 @@ python compute_asp_intra_match.py --filename "./single-gpu-generations/stepgame/
 
 CLM Algorithm run:
 
-6. cd conformal-language-modeling/scripts
+6.
+```bash 
+cd conformal-language-modeling/scripts
+```
    
-   Generate the CLM input data
+Generate the CLM input data
 
 ```bash
      python stepgame_data.py \
