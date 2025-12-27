@@ -4,7 +4,9 @@ Robust inference with probabilistic answer set program scaffolds for large langu
 Sample Generations:
 
 1. cd conformal-language-modeling/clm_aux/scripts/asp/ and run the sample generation file:
-   	python run_asp.py --stepgame_starting_index 0 --stepgame_end_index <len(dataset)-1> --batch_size 4 --num_generations 20 --strategy "sample" --output_name './single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/metallama3.1-8b-instruct_examples.jsonl'
+```bash
+python run_asp.py --stepgame_starting_index 0 --stepgame_end_index <len(dataset)-1> --batch_size 4 --num_generations 20 --strategy "sample" --output_name './single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/metallama3.1-8b-instruct_examples.jsonl'
+```
 	
 This will generate 20 samples per example and save them in output_name folder
    
