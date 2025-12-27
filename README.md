@@ -26,8 +26,9 @@ python compute_asp_scores.py --filename "./single-gpu-generations/stepgame/instr
 ```
 
 5. compute the diversity metric
-   
+```bash   
 python compute_asp_intra_match.py --filename "./single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/metallama3.1-8b-instruct-examples_fix_eos.jsonl" --output_filename "./single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/diversity_rouge.npy" --output_txt_filename "./single-gpu-generations/stepgame/instruction_length_1_to_5/20_samples_per_example/diversity_rouge.txt"
+```
 
 CLM Algorithm run:
 
